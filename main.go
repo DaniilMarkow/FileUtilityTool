@@ -102,23 +102,23 @@ func outputResults(countries []Country, outputFile string) error {
 }
 
 func getFileFormat(filename string) string {
-    if strings.HasSuffix(filename, ".csv") {
-        return "csv"
-    } else if strings.HasSuffix(filename, ".json") {
-        return "json"
-    }
-    return ""
+	if strings.HasSuffix(filename, ".csv") {
+		return "csv"
+	} else if strings.HasSuffix(filename, ".json") {
+		return "json"
+	}
+	return ""
 }
 
 func validateCountry(c Country) error {
-    if c.Name == "" {
-        return fmt.Errorf("country name cannot be empty")
-    }
-    if c.Population < 0 {
-        return fmt.Errorf("population cannot be negative")
-    }
-    if c.Area < 0 {
-        return fmt.Errorf("area cannot be negative")
-    }
-    return nil
+	if c.Name == "" {
+		return fmt.Errorf("country name cannot be empty")
+	}
+	if c.Population < 0 {
+		return fmt.Errorf("population cannot be negative")
+	}
+	if c.Area < 0 {
+		return fmt.Errorf("area cannot be negative")
+	}
+	return nil
 }
