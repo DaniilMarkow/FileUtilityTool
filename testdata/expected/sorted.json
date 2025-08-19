@@ -1,0 +1,22 @@
+[
+  {
+    "name": "France",
+    "population": 68860000,
+    "area": 549190
+  },
+  {
+    "name": "Japan",
+    "population": 127400000,
+    "area": 377835
+  },
+  {
+    "name": "Russia",
+    "population": 143400000,
+    "area": 17075200
+  },
+  {
+    "name": "USA",
+    "population": 295700000,
+    "area": 9629091
+  }
+]
